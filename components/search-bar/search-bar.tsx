@@ -4,7 +4,7 @@ import { API_ROUTE_SCORECARD_MINIMUM_SEARCH_LIMIT, debounce } from '../../core';
 import styles from './search-bar.module.css';
 
 const PLACEHOLDER = 'Enter a college name';
-const DEBOUNCE_PERIOD = 500;
+const DEBOUNCE_PERIOD = 300;
 
 type Props = {
   onInputChange: (value: string) => void;

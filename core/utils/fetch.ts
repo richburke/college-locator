@@ -6,11 +6,14 @@ export const fetchScorecardData = async (search = '') => {
   const response = await fetch(`/api/${API_ROUTE_SCORECARD}?name=${search}`);
   const json = await response.json();
   const values: RawScorecardEntry[] = json?.results;
-  return values.map(transformScorecardEntry).reduce(
-    (acc, entry: ScorecardEntry) => ({
-      ...acc,
-      [String(entry.id)]: entry,
-    }),
-    {},
-  );
+  return values
+    .map(transformScorecardEntry)
+    .filter((entry) => entry.name?.length > 0)
+    .reduce(
+      (acc, entry: ScorecardEntry) => ({
+        ...acc,
+        [String(entry.id)]: entry,
+      }),
+      {},
+    );
 };

@@ -26,6 +26,10 @@ const Home: NextPage = () => {
     setActiveItem(searchResults[id]);
   };
 
+  const results = Object.values(searchResults).sort((a, b) =>
+    a.name > b.name ? 1 : -1,
+  );
+
   return (
     <div className={styles.container}>
       <Head>
@@ -44,10 +48,7 @@ const Home: NextPage = () => {
 
         <section className={styles.content}>
           <div className={styles.results}>
-            <SearchResults
-              results={Object.values(searchResults)}
-              onItemClick={handleResultClick}
-            />
+            <SearchResults results={results} onItemClick={handleResultClick} />
           </div>
           <div className={styles.sidebar}>
             <Map
