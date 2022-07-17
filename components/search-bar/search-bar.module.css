@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  border: 4px solid #0a2342;
+  background-color: #fffff095;
+  border-radius: 8px;
+  min-width: 600px;
+  padding: 12px;
+}
+
+.input {
+  font-size: 1.5rem;
+  height: 100%;
+  flex-grow: 1;
+  border: 0;
+  background-color: transparent;
+}
+.input:focus {
+  outline: none;
+}
+
+.button {
+  border: 0;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
+.clearIcon,
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon {
+  color: #0a234260;
+}
+
+.clearIcon {
+  color: #0a2342;
+}

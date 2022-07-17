@@ -1,0 +1,3 @@
+export const API_ROUTE_SCORECARD = 'scorecard';
+export const API_ROUTE_SCORECARD_PER_PAGE_LIMIT = 100;
+export const API_ROUTE_SCORECARD_MINIMUM_SEARCH_LIMIT = 3;

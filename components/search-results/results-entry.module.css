@@ -1,0 +1,36 @@
+.container {
+  background-color: #fffff095;
+  border: 2px solid #fffff0;
+  border-radius: 3px;
+  margin-top: 40px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.container:hover {
+  background-color: #fffff0;
+}
+
+.container:first-child {
+  margin-top: 0;
+}
+
+.active {
+  background-color: #fffff0;
+  border: 2px solid #0a2342;
+}
+
+.name,
+.address {
+  margin: 0;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.address {
+  font-size: 1rem;
+  margin-top: 6px;
+}

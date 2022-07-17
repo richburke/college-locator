@@ -1,0 +1,19 @@
+.container {
+  width: 400px;
+  height: 400px;
+  border: 8px solid #fffff0;
+  border-radius: 3px;
+}
+
+.marker {
+  background-color: #fffff0;
+  text-align: center;
+  width: fit-content;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.marker svg {
+  margin-right: 2px;
+}

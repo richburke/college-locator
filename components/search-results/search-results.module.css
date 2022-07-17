@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.instruction {
+  background-color: #fffff080;
+  border-radius: 3px;
+  padding: 16px;
+  min-width: 80%;
+}
+
+.instruction p {
+  font-size: 1.25rem;
+  color: #0a2342;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+}
