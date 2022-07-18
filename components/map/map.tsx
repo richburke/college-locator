@@ -4,6 +4,8 @@ import { MdSchool as MortarBoard } from 'react-icons/md';
 import styles from './map.module.css';
 
 const GOOGLE_MAP_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY as string;
+const DEFAULT_LATITUDE = 39.183609;
+const DEFAULT_LONGITUDE = -96.571671;
 
 const Marker = ({ text }: { text: string }) => (
   <div className={styles.marker}>
@@ -20,8 +22,8 @@ type Props = {
 
 const Map = ({
   name = '',
-  latitude = 39.183609,
-  longitude = -96.571671,
+  latitude = DEFAULT_LATITUDE,
+  longitude = DEFAULT_LONGITUDE,
 }: Props) => {
   const [coordinates, setCordinates] = useState({
     lat: latitude,
